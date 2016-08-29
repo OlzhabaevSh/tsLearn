@@ -1,0 +1,32 @@
+﻿<div ng-init="$ctrl.init()">
+    <div>
+        <!--Here will show selected Person-->
+        <h3>Current person:</h3>
+        <b>Name:</b> {{$ctrl.currentPerson.name}} <br />
+        <b>Age:</b> {{$ctrl.currentPerson.age}} <br />
+        <b>Positon:</b> {{$ctrl.currentPerson.positionTitle}} <br />
+    </div>
+    <hr />
+    <div>
+        <!--Here will show person list-->
+        <h3>Person list</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Position</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="prs in $ctrl.persons">
+                    <td>{{prs.name}}</td>
+                    <td>{{prs.age}}</td>
+                    <td>{{prs.positionTitle}}</td>
+                    <td><button ng-click="$ctrl.select(prs)">Select</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

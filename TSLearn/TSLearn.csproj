@@ -24,14 +24,22 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="App\Angular\index.html" />
+    <Content Include="App\Angular\MasterDetail\Template.html" />
     <Content Include="App\Classes\index.html" />
     <Content Include="App\Lifecicle\index.html" />
     <Content Include="App\Modules\index.html" />
     <Content Include="App\Types\index.html" />
     <Content Include="index.html" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\r.js" />
+    <Content Include="Scripts\require.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="Scripts\angular.min.js.map" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -40,10 +48,27 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="App\Angular\index.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetail\masterDetail.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetail\masterDetailController.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetail\masterDetailMdl.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetail\masterDetailService.ts" />
     <TypeScriptCompile Include="App\Classes\class.ts" />
     <TypeScriptCompile Include="App\Lifecicle\livecicle.ts" />
+    <TypeScriptCompile Include="App\Modules\index.ts" />
+    <TypeScriptCompile Include="App\Modules\PersonClass.ts" />
     <TypeScriptCompile Include="App\Types\Types.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
@@ -73,6 +98,17 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>AMD</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
