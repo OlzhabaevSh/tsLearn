@@ -30,6 +30,7 @@ function useTypeFunc(x: number, y: number): number {
     return x + y;
 }
 
+
 // show error
 // var neverRes = useTypeFunc(1, "2");
 

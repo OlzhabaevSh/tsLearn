@@ -3,6 +3,9 @@ var person = {
     name: "Admin",
     age: 28
 };
+var person2 = {
+    age: 100
+};
 var EmailPostSender = (function () {
     function EmailPostSender() {
         this._isValid = false;

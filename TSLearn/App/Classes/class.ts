@@ -1,7 +1,7 @@
 ﻿// ex 1. interface
 
 interface IPerson {
-    name: string;
+    name?: string;
     age: number;
 }
 
@@ -9,6 +9,10 @@ var person: IPerson = {
     name: "Admin",
     age: 28
 };
+
+var person2: IPerson = {
+    age: 100
+}
 
 // ex 2. contract
 

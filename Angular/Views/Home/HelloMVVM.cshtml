@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "HelloMVVM";
+}
+
+<h2>HelloMVVM</h2>
+
+<div ng-controller="myCtrl">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Простая связка данных</div>
+                <div class="panel-body">
+                    <b>Write: </b> <input ng-model="mySimpleVal" class="form-control" /> <br />
+                    <b>Res: </b> {{mySimpleVal}}
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Пример списка</div>
+                <div class="panel-body">
+                    <ul>
+                        <li ng-repeat="item in list">
+                            <b>{{item.id}}</b> {{item.title}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Обработчики</div>
+                <div class="panel-body">
+                    <button class="btn btn-default" ng-click="clickTest()">Click me</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Todo List</div>
+                <div class="panel-body">
+                    <b>Title: </b>
+                    <input ng-model="text" />
+                    <button class="btn btn-default" ng-click="add()"><span class="glyphicon glyphicon-plus text-success"></span></button>
+
+                    <table class="table table-responsive">
+                        <tbody>
+                            <tr ng-repeat="item in persons track by $index">
+                                <td>{{item}}</td>
+                                <td><button class="btn btn-default" ng-click="remove($index)"><span class="glyphicon glyphicon-remove text-danger"></span></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="~/Scripts/App/helloMVVM.js"></script>
