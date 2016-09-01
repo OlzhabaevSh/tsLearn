@@ -5,3 +5,22 @@
 
 <h2>ExampleModule</h2>
 
+<div>
+    <div ng-controller="mainController as mCtrl">
+        <div class="row col-md-4">
+            <p>
+                <b>Operand A: </b> <input type="number" class="form-control" ng-model="mCtrl.operandA" />
+            </p>
+            <p>
+                <b>Operand B: </b> <input type="number" class="form-control" ng-model="mCtrl.operandB" />
+            </p>
+            <p>
+                <b>Result: </b> <input type="number" class="form-control" ng-model="mCtrl.result" />
+            </p>
+            <button class="btn btn-default" ng-click="mCtrl.sum()">Sum</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/App/exampleModule.js"></script>
