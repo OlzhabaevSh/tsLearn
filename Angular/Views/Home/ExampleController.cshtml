@@ -5,3 +5,44 @@
 
 <h2>ExampleController</h2>
 
+<div class="row">
+    
+    <div class="col-md-4" ng-controller="simpleCtrl">
+        <div class="panel panel-primary" ng-init="init()">
+            <div class="panel-heading">{{title}}</div>
+            <div class="panel-body">
+                {{title}}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" ng-controller="normalCtrl">
+        <div class="panel panel-primary" ng-init="init()">
+            <div class="panel-heading">{{title}}</div>
+            <div class="panel-body">
+                {{title}}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" ng-controller="heroicCtrl as hCtrl">
+        <div class="panel panel-primary" ng-init="hCtrl.init()">
+            <div class="panel-heading">{{hCtrl.title}}</div>
+            <div class="panel-body">
+                {{hCtrl.title}}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4" ng-controller="epicCtrl as eCtrl">
+        <div class="panel panel-primary" ng-init="eCtrl.init()">
+            <div class="panel-heading">{{eCtrl.title}}</div>
+            <div class="panel-body">
+                {{eCtrl.title}}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="~/Scripts/App/exampleController.js"></script>

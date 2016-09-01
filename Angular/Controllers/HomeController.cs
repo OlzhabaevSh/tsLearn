@@ -19,6 +19,11 @@ namespace Angular.Controllers
             return View();
         }
 
+        public ActionResult AngularComponents()
+        {
+            return View();
+        }
+
         public ActionResult ExampleController()
         {
             return View();

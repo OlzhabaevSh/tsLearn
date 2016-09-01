@@ -5,3 +5,24 @@
 
 <h2>ExampleComponent</h2>
 
+<div ng-controller="mainController as mCtrl" ng-init="mCtrl.init()">
+    
+    <div>
+        <b>Show element: </b> <input type="checkbox" ng-model="mCtrl.isShow" /> <br />
+        <b>Title: </b> <input type="text" class="form-control" ng-model="mCtrl.title"  />
+        <b>Text: </b> <input type="text" class="form-control" ng-model="mCtrl.text" />
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <my-custom-component is-open="mCtrl.isShow" 
+                         title="mCtrl.title" 
+                         text="mCtrl.text"></my-custom-component>
+
+
+
+</div>
+
+<script src="~/Scripts/App/exampleComponents.js"></script>

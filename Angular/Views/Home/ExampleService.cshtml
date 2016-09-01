@@ -5,3 +5,65 @@
 
 <h2>ExampleService</h2>
 
+<div>
+
+    <div class="row">
+
+        <div class="col-md-8">
+            <div class="panel panel-primary"
+                 ng-controller="personListController as listCtrl"
+                 ng-init="listCtrl.init()">
+
+                <div class="panel-heading">
+                    Person list
+                    <a href="#" ng-click="listCtrl.refresh()">
+                        <span class="glyphicon glyphicon-refresh text-danger"></span>
+                    </a>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr ng-repeat="item in listCtrl.persons">
+                                <td>#{{item.id}}</td>
+                                <td>{{item.name}}</td>
+                                <td>{{item.surName}}</td>
+                                <td>{{item.position}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="panel panel-primary"
+                 ng-controller="personFormController as formCtrl"
+                 ng-init="formCtrl.init()">
+
+                <div class="panel-heading">Person form</div>
+                <div class="panel-body">
+                    <div>
+                        <b>Name: </b> <input type="text" class="form-control" ng-model="formCtrl.name" />
+                    </div>
+                    <div>
+                        <b>SurName: </b> <input type="text" class="form-control" ng-model="formCtrl.surName" />
+                    </div>
+                    <div>
+                        <b>Position: </b> <input type="text" class="form-control" ng-model="formCtrl.position" />
+                    </div>
+
+                    <hr />
+
+                    <button class="btn btn-default" ng-click="formCtrl.add()">Send</button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="~/Scripts/App/exampleService.js"></script>
