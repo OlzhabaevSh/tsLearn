@@ -24,7 +24,7 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="App\Angular\index.html" />
-    <Content Include="App\Angular\MasterDetail\Template.html" />
+    <Content Include="App\Angular\MasterDetailExample\MasterDetail\Template.html" />
     <Content Include="App\Classes\index.html" />
     <Content Include="App\Lifecicle\index.html" />
     <Content Include="App\Modules\index.html" />
@@ -49,10 +49,12 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="App\Angular\index.ts" />
-    <TypeScriptCompile Include="App\Angular\MasterDetail\masterDetail.ts" />
-    <TypeScriptCompile Include="App\Angular\MasterDetail\masterDetailController.ts" />
-    <TypeScriptCompile Include="App\Angular\MasterDetail\masterDetailMdl.ts" />
-    <TypeScriptCompile Include="App\Angular\MasterDetail\masterDetailService.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetailExample\Common\CommonMdl.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetailExample\Common\PersonService.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetailExample\MasterDetail\masterDetail.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetailExample\MasterDetail\masterDetailController.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetailExample\MasterDetail\masterDetailMdl.ts" />
+    <TypeScriptCompile Include="App\Angular\MasterDetailExample\MasterDetail\masterDetailService.ts" />
     <TypeScriptCompile Include="App\Classes\class.ts" />
     <TypeScriptCompile Include="App\Lifecicle\livecicle.ts" />
     <TypeScriptCompile Include="App\Modules\index.ts" />

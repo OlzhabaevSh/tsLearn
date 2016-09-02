@@ -1,5 +1,6 @@
 ﻿export let Name: string = "masterDetailService";
 
+
 export enum Position {
     junior, 
     senior,
@@ -12,13 +13,22 @@ export interface IPerson {
     position: Position;
 }
 
+/**
+ * Наш супер сервис
+ */
 export class MasterDetailService {
 
     private _persons: Array<IPerson>;
 
+    /**
+     * констркутор ничего не делает
+     */
     constructor() {
     }
 
+    /**
+     * этого видно не будет снаружи
+     */
     private generate(): void {
 
         let res = new Array<IPerson>();
@@ -34,7 +44,9 @@ export class MasterDetailService {
         this._persons = res;
     }
 
-
+    /**
+     * возвращаем массив персонов
+     */
     public GetPersons(): Array<IPerson> {
 
         if (this._persons == null) {

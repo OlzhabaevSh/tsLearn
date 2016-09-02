@@ -6,8 +6,8 @@ export let Name: string = "masterDetailMdl";
 
 let mdl = angular.module(Name, []);
 
+// тут код регистрации
 mdl.service(mdService.Name, mdService.MasterDetailService);
 mdl.controller(mdController.Name, mdController.MasterDetailController);
 mdl.component(mdComponent.Name, mdComponent.masterDetail);
 
-console.log('ss');

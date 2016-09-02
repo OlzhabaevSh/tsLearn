@@ -29,4 +29,28 @@
             </tbody>
         </table>
     </div>
+
+    <hr />
+
+    <div>
+        <!--Here will show list from second service-->
+        <h3>Person web list</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in $ctrl.personsWeb">
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.age}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>

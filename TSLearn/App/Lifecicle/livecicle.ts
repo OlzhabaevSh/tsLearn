@@ -4,7 +4,7 @@
 // вы можете писать вполне валидный js-код, в ts-файле
 
 // ex1: object
-var person = {
+var prsn = {
     name: "Admin",
     age: 28
 };

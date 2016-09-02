@@ -2,7 +2,9 @@
 
 export let Name: string = "masterDetail";
 
+// создаем компоненту
 export let masterDetail: ng.IComponentOptions = {
     controller: masterDetailCtrl.Name,
-    templateUrl: '/App/Angular/MasterDetail/Template.html'
+    templateUrl: '/App/Angular/MasterDetailExample/MasterDetail/Template.html'
+    
 };
