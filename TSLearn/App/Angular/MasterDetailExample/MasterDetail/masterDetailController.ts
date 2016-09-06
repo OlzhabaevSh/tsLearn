@@ -29,16 +29,19 @@ export class MasterDetailController implements ng.IComponentController {
     // функция инит
     public init() {
         // получаем список персонов
-        var persons = <IPerson[]>this.masterDetailService.GetPersons();
+        this.persons = <IPerson[]>this.masterDetailService.GetPersons();
         var s: ng.IHttpService;
 
         // обратите внимание, как работаем с циклом. аргументы типизированы
-        persons.forEach((value, i) => {
+        this.persons.forEach((value, i) => {
             value.positionTitle = masterDetailSrv.Position[value.position];
         });
 
+
         // use second service
         this.personsWeb = this.personWebService.get(10);
+
+
     }
 
     public select(person: IPerson) {
